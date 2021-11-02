@@ -14,11 +14,17 @@ box-sizing: content-box; /* Opera/IE 8+ */
 -webkit-box-sizing: content-box; /* Safari/Chrome, others */  
 }
 /* sections in body are organized in columns */
+
+
 body
 {
+min-width: auto;
 display: flex;
 flex-direction: column;
-margin-top: 0;
+margin: 0;
+padding: 0;
+
+
 }
 
 /* normalizing titles*/
@@ -48,10 +54,8 @@ display: flex;
 height: 220px;
 flex-direction: column;
 justify-content: space-between;
-padding-left: 2%;
 padding: 0 2% 0 2%;
 margin-bottom: 1%;
-
 }
 
 #topHeader
@@ -61,7 +65,6 @@ justify-content: space-between;
 align-items: center;
 width: 100%;
 height: 50%;
-
 }
 
 #logo
@@ -71,8 +74,8 @@ width: 100px;
 height: 50px;
 margin: 0 0 0 0;
 padding-left: 1%;
-
 }
+
 #logo img
 {
 	display: flex;
@@ -100,6 +103,7 @@ padding: 12% 6% 6% 6%;
 border-top: solid 3px white;
 
 }
+
 /* changing the aspect while selected*/
 .inPageNav:focus
 {
@@ -132,6 +136,7 @@ margin: 0;
 padding: 0;
 }
 
+
 /* -------------------------------------------------
 -----------------Form section---------------------*/
 /* the filters are non-fonctionnals yet! only aesthetic implemented yet */
@@ -142,9 +147,11 @@ padding: 0;
 {
 display: flex;
 flex-direction: column;
-margin-left: 2%;
-margin-right: 2%;
 width: 100%;
+max-width: 100%;
+margin: 30px 0 0 0;
+padding: 0;
+
 }
 
 #searchBar
@@ -158,7 +165,7 @@ border: solid #F2F2F2;
 border-radius: 15px;
 align-items: center;
 justify-content: space-between;
-margin-bottom: 2%;
+margin: 0 0 2% 25%;
 }
 
 /* location icon configuration*/
@@ -201,31 +208,42 @@ color: white;
 
 
 /*---------------------*/
-/* second part the filters  */
+/* second part: filters  */
 #filters
 {
 display: flex;
 flex-wrap: wrap;
 max-width: 100%;
-align-items: center;
-justify-content: flex-start;
+height: 200px;
 font-size: 120%;
 font-weight: bold;
 margin-bottom: 2%;
 margin-right: 2%;
 }
 
+
+#filters p
+{
+	margin-top: 30px;
+	padding-left: 4%;
+	width: 100%;
+	text-align: left;
+	
+}
+
 /*choice box including icon + text*/
 .filterChoice
 {
 display: flex;
+width: auto;
+height: 50px;
 border-radius: 27px;
 border: solid 2px #F2F2F2;
 padding-right: 30px;
-margin-left: 4%;
 align-items: center;
 justify-content: space-around;
 text-decoration: none;
+
 }
 
 .filterChoice:hover
@@ -260,8 +278,9 @@ font-weight: bold;
 .infoNote
 {
 display: flex;
+justify-content: center;
 align-items: center;
-margin-bottom: 2%;
+margin: 2% 0 1% 0;
 }
 
 .infoNote i
@@ -285,34 +304,40 @@ margin-right: 1%
 #accomodation
 {
 display: flex;
+width: 100%;
+height: auto;
+flex-direction: column-reverse;
 flex-wrap: wrap;
 justify-content: space-around;
 margin-bottom: 50px;
-margin-left: 0.5%;
-margin-right: 0.5%;
+margin: 3% 0 0 0;
+
 }
 
 /* accomodation thumbnail container*/
 #accoThumbCont
 {
 display: flex;
-width: 60%;
-border-radius: 15px;
+width: 100%;
+margin: 0;
+padding: 0;
+border-radius: 0;
 background-color: #F2F2F2;
-padding: 2%;
-margin-right: 2%;
-
+align-items: center;
+justify-content: center;
 flex-wrap: wrap;
 }
 
 #accoThumbCont h1
 {
 width: 100%;
+text-align: center;
 }
 
 #accoThumbCont a
 {
 width: 100%;
+text-align: center;
 text-decoration: none;
 color: black;
 }
@@ -321,14 +346,14 @@ color: black;
 .thumbnailAcco
 {
 display: flex;
-width: 29%;
 flex-direction: column;
+height: 275px;
+width: 29%;
+min-width: 400px;
 margin: 1%;      
 padding: 0.5%;
 background-color: white;
 justify-content: space-between;
-
-height: 275px;
 
 border: solid white 2px;
 border-radius: 15px;
@@ -368,7 +393,6 @@ display: flex;
 margin: 0.5%;
 padding: 0.5%;
 color: #0065FC;
-
 }
 
 /*-- part 2 popular accomodation---*/
@@ -376,21 +400,23 @@ aside
 {
 display: flex;
 flex-direction: column;
-width: 25%;
-border-radius: 15px;
+width: 100%;
+height: auto;
+border-radius: 0%;
 background-color: #F2F2F2;
-padding: 2%;
 align-items: center;
-flex-wrap: wrap;
+margin: 0 0 20px 0;
+padding: 0 0 5% 0;
 }
 
 #popularHead
 {
 display: flex;
 width: 100%;
-justify-content: space-between;
+justify-content: space-around;
 align-items: center;
 font-size: large;
+margin: 2% 0 4% 0;
 }
 
 #popularHead i
@@ -404,14 +430,27 @@ font-size: large;
 }
 
 /* thumbnail popular accomodations */
+
+.thumbnailPopularCont
+{
+	display: flex;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
 .thumbnailPopular
 {
 display: flex;
-height: 180px;
-max-height: 180px;
-width: 100%;
-margin-top: 5%;
-margin-bottom: 5%;
+height: 220px;
+max-height: 220px;
+width: 29%;
+min-width: 400px;
+margin: 2% 5% 1% 0;
 padding: 0.5%;
 background-color: white;
 overflow: hidden;
@@ -432,20 +471,20 @@ align-items: center;
 border-radius: 15px 0 0 15px;
 }
 
-
 .thumbnailPopularTxt
 {
 display: flex;
 width: 60%;
 flex-direction: column;
-justify-content: space-between;
+justify-content: space-around;
 }
 
-.thumbnailPopularTxt .rating
+#accomodation a
 {
 	display: flex;
+	justify-content: flex-start;
+	margin: 3% 0 3% 3%;
 }
-
 /* -------------------------------------------------
 -------------Activities section-----------------*/
 
@@ -453,34 +492,55 @@ justify-content: space-between;
 {
 display: flex;
 flex-direction: column;
-margin-left: 2%;
-
+margin: 30px 0 0 0;
+padding: 0;
+margin-bottom: 4%;
 }
+
 #actiTitle
 {
 display: flex;
 }
 
-/* thumbnail container*/
+#actiTitle h1
+{
+width: 100%;
+text-align: center;
+}
+
+/*thumbnail container*/
 .thumbnailActiCont
 {
 display: flex;
-flex-direction: column;
-height: 680px;
+flex-direction: row;
 width: 100%;
+height: auto;
+margin: 0;
+padding: 0;
+border-radius: 0;
+align-items: center;
+justify-content: center;
 flex-wrap: wrap;
+
 }
+
 /*activities thumbnail*/
 .thumbnailActi
 {
 display: flex;
-width: 23%;
-height: 595px;
 flex-direction: column;
+height: 275px;
+width: 29%;
+min-width: 400px;
+margin: 1%;      
+padding: 0.5%;
+background-color: white;
+justify-content: space-between;
+
+border: solid white 2px;
 border-radius: 15px;
-border: none;
-margin-bottom: 2%;
 box-shadow: 1px 1px 10px -7px #000000;
+
 }
 .thumbnailActi h2
 {
@@ -504,24 +564,23 @@ justify-content: center;
 align-items: center;
 }
 
-
 /* thumbnail n°2,3,5 and 6 height modification */
-/* to be displayed stacked*/
+/* to be the same size*/
 .thumbnailActiCont :nth-child(2)
 {
-height: 310px;
+height: 275px;
 }
 .thumbnailActiCont :nth-child(3)
 {
-height: 250px;
+height: 275px;
 }
 .thumbnailActiCont :nth-child(5)
 {
-height: 280px;
+height: 275px;
 }
 .thumbnailActiCont :nth-child(6)
 {
-height: 280px;
+height: 275px;
 }
 
 /* -------------------------------------------------
@@ -529,15 +588,20 @@ height: 280px;
 
 footer
 {
+padding-top: 4%;
 display: flex;
-padding-left: 2%;
+padding-left: 0;
 background-color: #F2F2F2;
 margin-top: 0.5%;
+justify-content: space-around;
+
 }
 
 nav
 {
-margin-right: 21%;
+margin-right: 0;
+justify-content: space-around;
+
 }
 
 nav ul
@@ -546,10 +610,12 @@ list-style-type: none;
 margin-left:0;
 padding-left:0;
 line-height: 225%;
+
 }
 
 nav ul li a
 {
 text-decoration: none;
 color: black;
+
 }

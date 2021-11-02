@@ -12,11 +12,8 @@
 
     <!-- we call the corresponding css file for each browser dimension, breakpoint : 992px and 768px  -->
     <link rel="stylesheet" href="css/largeStyle.css"/>
-    <!--<link rel="stylesheet" media="screen and(max-width: 992px)" href="css/mediumStyle.css"/>
-    <link rel="stylesheet" media="screen and(max-width: 768px)" href="css/smallStyle.css"/>   -->
-
-        
-    
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/smallStyle.css"/>
+    <link rel="stylesheet" media="screen and (max-width: 992px) and (min-width: 769px)" href="css/mediumStyle.css"/> 
 
     <!-- we set the viewport to the screen width to avoid unwanted zooms from mobile browser -->
     <meta name="viewport" content="width=device-width"/>
@@ -29,21 +26,23 @@
     <!-- ____________________________________________________________________ -->
     <!-- top banner with logo, title and in-page section navigation -->
     <header id="banner">
-        <div id="leftHeader">
-            <a href="#"><img id="logo" src="assets/booki.png" alt="Booki logo"/></a>
+        <div id="topHeader">
+            <a id="logo" href="#"><img src="assets/BookiLogo.png" alt="Booki logo"/></a>
+            <div id="inPageNavCont">
+                <a href="#accomodation" class="inPageNav">Hébergements</a>
+                <a href="#activities" class="inPageNav">Activités</a>
+            </div>
+        </div>
+        <div id="bottomHeader">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p class="note">En plein centre-ville ou en pleine nature</p>
-        </div>
-        <div id="rightHeader">
-            <a href="#" class="inPageNav">Hébergements</a>
-            <a href="#" class="inPageNav">Activités</a>
         </div>
     </header>
 
     <!-- ____________________________________________________________________ -->
     <!-- form section with research bar and filters -->
     <section id="research">
-        <form>
+        <form id="userForm">
             <p id="searchBar">
                 <i class="fas fa-map-marker-alt"></i>
                 <input type="text" name="search" value="Marseille, France" id="searchTextBox"/>
@@ -142,33 +141,35 @@
                 <h1>Les plus populaires</h1> 
                 <i class="fas fa-chart-line"></i>
             </div>
-            <div class="thumbnailPopular">
-                <div class="thumbnailPopularImg"><img src="assets/matin.jpg" alt="hotel matin"/></div>
-                <div class="thumbnailPopularTxt">
-                    <h2>Hôtel Le soleil du matin</h2>
-                    <p class="pricePerNight">Nuit à partir de 128€</p>
-                    <div class="rating">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <div class="thumbnailPopularCont">
+                <div class="thumbnailPopular">
+                    <div class="thumbnailPopularImg"><img src="assets/matin.jpg" alt="hotel matin"/></div>
+                    <div class="thumbnailPopularTxt">
+                        <h2>Hôtel Le soleil du matin</h2>
+                        <p class="pricePerNight">Nuit à partir de 128€</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="thumbnailPopular">
-                <div class="thumbnailPopularImg"><img src="assets/coeur.jpg" alt="hotel coeur"/></div>  
-                <div class="thumbnailPopularTxt">
-                    <h2>Au coeur de l'eau Chambres d'hôtes</h2>
-                    <p class="pricePerNight">Nuit à partir de 71€</p>
-                    <div class="rating">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star" style="color:#F2F2F2;"></i>
+                <div class="thumbnailPopular">
+                    <div class="thumbnailPopularImg"><img src="assets/coeur.jpg" alt="hotel coeur"/></div>  
+                    <div class="thumbnailPopularTxt">
+                        <h2>Au coeur de l'eau Chambres d'hôtes</h2>
+                        <p class="pricePerNight">Nuit à partir de 71€</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star" style="color:#F2F2F2;"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="thumbnailPopular">
-                <div class="thumbnailPopularImg"><img src="assets/bleuBlanc.jpg" alt="bleu blanc"/></div>
-                <div class="thumbnailPopularTxt">
-                    <h2>Hôtel Tout bleu et blanc</h2>
-                    <p class="pricePerNight">Nuit à partir de 68€</p>
-                    <div class="rating">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star" style="color:#F2F2F2;"></i>
+                <div class="thumbnailPopular">
+                    <div class="thumbnailPopularImg"><img src="assets/bleuBlanc.jpg" alt="bleu blanc"/></div>
+                    <div class="thumbnailPopularTxt">
+                        <h2>Hôtel Tout bleu et blanc</h2>
+                        <p class="pricePerNight">Nuit à partir de 68€</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star" style="color:#F2F2F2;"></i>
+                        </div>
                     </div>
                 </div>
             </div>
