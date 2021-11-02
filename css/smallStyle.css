@@ -11,36 +11,10 @@ box-sizing: content-box; /* Opera/IE 8+ */
 /* sections in body are organized in columns */
 
 
-body
-{
-min-width: auto;
-display: flex;
-flex-direction: column;
-margin: 0;
-padding: 0;
-}
-
 h1
 {
-	font-size: x-large;
+font-size: x-large;
 }
-
-/* normalizing titles*/
-h2
-{
-font-size: 120%;
-}
-
-/* normalized image positionning within each image container */
-img
-{
-padding: 0;
-margin: 0;
-width: 100%; 
-height: 100%;
-object-fit: cover;
-}
-
 
 /* -------------------------------------------------
 -----------------top banner part 
@@ -48,103 +22,73 @@ the top banner is split into right and left header in html
 inPageNav is referring to the navigation tabs up top right */
 #banner
 {
-display: flex;
 height: 300px;
-flex-direction: column;
-justify-content: space-between;
 padding: 0 0 0 0;
 margin: 2% 0 1% 0;
 }
 
 #topHeader
 {
-display: flex;
 flex-direction: column;
-justify-content: space-between;
-align-items: center;
-width: 100%;
-height: 50%;
-
 }
 
 #logo
 {
-display: flex;
 justify-content: center;
-width: 100px;
 height: 75px;
-margin: 0 0 0 0;
 padding-left: 0;
 }
 
 #logo img
 {	
-	width: 100%;
-	display: flex;
-	justify-content: center;
+justify-content: center;
 }
 
 #inPageNavCont
 {
-display: flex;
 justify-content: center;
-margin: 0;
-padding: 0;
-height: 50%;
 width: 100%;
-
 }
 
 .inPageNav
 { 
-display: flex;
 height: auto;
 width: 100%;
 justify-content: center;
-color: black;
-text-decoration: none;
-padding: 2% 6% 0 6%;
+padding: 2% 0 0 0;
 border-bottom: solid 3px #F2F2F2;
-
 }
+
 /* changing the aspect while selected*/
 .inPageNav:focus
 {
-color: #0065FC;
 border-bottom: solid 3px #0065FC;
 border-top: none;
 }
 
-
 /*---------------------*/
 #bottomHeader
 {
-display: flex;
-flex-direction: column;
 justify-content: space-around;
-height: 50%;
-width: 100%;
 padding: 0;
 margin: 3% 0 0 0;
-
 }
 
 #bottomHeader h1
 {
-display: flex;
 width: 90%;
 margin: 0 0 0 3%;
-padding: 0;
-
 }
 
 .note
 {
-display: flex;
+	margin-left: 3%;
+}
+
+.infoNote
+{
 width: 90%;
 margin: 0 0 0 3%;
-padding: 0;
-
 }
 
 /* -------------------------------------------------
@@ -155,7 +99,6 @@ padding: 0;
 /*first part location icon + user input + research button */
 #research
 {
-display: flex;
 justify-content: center;
 align-items: center;
 margin: 3% 0 0 0;
@@ -172,143 +115,56 @@ align-items: center;
 
 #searchBar
 { 
-display: flex;
-height: 40px;
 width: 90%;
 min-width: auto;
-align-items: center;
-justify-content: space-between;
-border: solid #F2F2F2;
-border-radius: 15px;
 margin: 2% 0 2% 0;
-padding: 0;
 }
 
 /* location icon configuration*/
-#searchBar i
+
+
+
+#searchButtonText
+{
+display: none;
+}
+
+#searchButtonIcon
 {
 display: flex;
 height: 100%;
 width: 15%;
-border-radius: 10px 0 0 10px;
-background-color: #F2F2F2;
-color: black;
+border-radius: 0 10px 10px 0;
+background-color: #0065FC;
+color: white;
 align-items: center;
 justify-content: center;
 padding: 0;
 margin: 0;
 }
 
-
-#searchTextBox
-{
-width: 50%;
-height: 100%;
-border: none;
-font-size: 120%;
-font-weight: bold;
-padding-left: 3%;
-}
-
-#searchButton
-{
-width: 35%;
-height: 100%;
-border-radius: 0 10px 10px 0;
-border-color: #0065FC; 
-background-color: #0065FC; 
-font-size: 120%;
-font-weight: bold;
-color: white;
-}
-
-
 /*---------------------*/
 /* second part: filters  */
 #filters
 {
-display: flex;
-flex-wrap: wrap;
-max-width: 100%;
 width: 100%;
 align-items: flex-start;
-justify-content: flex-start;
-font-size: 120%;
-font-weight: bold;
-margin-bottom: 2%;
 margin-right: 0;
-
 }
 
 #filters p
 {
-	margin-top: 30px;
-	padding-left: 4%;
-	width: 100%;
-	text-align: left;
+margin-top: 30px;
+padding-left: 4%;
+width: 100%;
+text-align: left;
 }
 
 /*choice box including icon + text*/
 .filterChoice
 {
-display: flex;
-border-radius: 27px;
-border: solid 2px #F2F2F2;
-padding-right: 30px;
 margin-top: 2%;
-align-items: center;
-justify-content: space-around;
-text-decoration: none;
-}
-
-.filterChoice:hover
-{
-border: solid 2px #0065FC;
-}
-
-/* Icons visuals*/
-.filterChoice i
-{
-display: flex;
-height: 50px;
-width: 50px;
-border-radius: 50%;
-background-color: #DEEBFF;
-color: #0065FC;
-align-items: center;
-justify-content: center;
-margin-right: 10px;
-}
-
-/* research button */
-.filterButton
-{
-border: none;
-background-color: rgba(0,0,0,0);
-font-size: 100%;
-font-weight: bold;
-}
-
-/* info line with icon down the section */
-.infoNote
-{
-display: flex;
-justify-content: center;
-align-items: center;
-margin: 2% 0 1% 0;
-}
-
-.infoNote i
-{
-color: #0065FC;
-display: flex;
-width:30px;
-height: 30px;
-border-radius: 50%;
-border: solid #F2F2F2 2px;
-align-items: center;
-justify-content: center;
-margin-right: 1%
+margin-left: 3%;
 }
 
 /* -------------------------------------------------
@@ -318,21 +174,15 @@ margin-right: 1%
 /*-- part 1 regular accomodation---*/
 #accomodation
 {
-display: flex;
 width: 100%;
 height: auto;
 flex-direction: column-reverse;
-flex-wrap: wrap;
-justify-content: space-around;
-margin-bottom: 50px;
 margin: 3% 0 0 0;
-
 }
 
 /* accomodation thumbnail container*/
 #accoThumbCont
 {
-display: flex;
 width: 100%;
 margin: 0;
 padding: 0;
@@ -340,185 +190,79 @@ border-radius: 0;
 background-color: white;
 align-items: center;
 justify-content: center;
-flex-wrap: wrap;
 }
 
 #accoThumbCont h1
 {
-width: 100%;
 text-align: center;
 }
 
 #accoThumbCont a
 {
-width: 100%;
 text-align: center;
-text-decoration: none;
-color: black;
 }
 
 /* accomodation thumbnail */
 .thumbnailAcco
 {
-display: flex;
-flex-direction: column;
 height: 275px;
-width: 29%;
 min-width: 400px;
-margin: 1%;      
-padding: 0.5%;
-background-color: white;
-justify-content: space-between;
-
-border: solid white 2px;
-border-radius: 15px;
-box-shadow: 1px 1px 10px -7px #000000;
-
-}
-
-.thumbnailAccoImg
-{
-display: flex;
-border-radius: 15px 15px 0 0;
-width: 100%;
-height: 65%;
-overflow: hidden;
-justify-content: center;
-align-items: center;
-}
-
-.thumbnailAcco h2
-{
-margin-top: 3%;
-margin-bottom: 0;
-padding-top: 0;
-padding-bottom: 0;
-}
-
-.pricePerNight
-{
-margin: 0.5%;
-padding: 0.5%;
-
-}
-/* star system rating */
-.rating
-{
-display: flex;
-margin: 0.5%;
-padding: 0.5%;
-color: #0065FC;
-
 }
 
 /*-- part 2 popular accomodation---*/
 aside
 {
-display: flex;
-flex-direction: column;
 width: 100%;
 height: auto;
 border-radius: 0%;
-background-color: #F2F2F2;
-align-items: center;
 margin: 0 0 20px 0;
 padding: 0 0 5% 0;
-
-
 }
 
 #popularHead
 {
-display: flex;
-width: 100%;
-justify-content: space-around;
-align-items: center;
-font-size: large;
 margin: 2% 0 2% 0;
-
-
+justify-content: space-around;
 }
 
-#popularHead i
-{
-	display: flex;
-	width: 50px;
-	height: 50px;
-	align-items: center;
-	justify-content: center;
-	margin-right: 1%;
-}
 
 /* thumbnail popular accomodations */
-
 .thumbnailPopularCont
 {
-	display: flex;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
+display: flex;
+width: 100%;
+margin: 0;
+padding: 0;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
 }
 
 .thumbnailPopular
 {
-display: flex;
 height: 220px;
 max-height: 220px;
 width: 29%;
 min-width: 400px;
 margin: 2% 2.5% 1% 2.5%;
-padding: 0.5%;
-background-color: white;
-overflow: hidden;
-border: solid white 2px;
-border-radius: 15px;
-box-shadow: 1px 1px 10px -7px #000000;
-}
-
-.thumbnailPopularImg
-{
-display: flex;
-width: 40%;
-height: 100%;
-margin-right: 5%;
-overflow: hidden;
-justify-content: center;
-align-items: center;
-border-radius: 15px 0 0 15px;
-}
-
-.thumbnailPopularTxt
-{
-display: flex;
-width: 60%;
-flex-direction: column;
 }
 
 #accomodation a
 {
-	display: flex;
-	justify-content: flex-start;
-	margin: 3% 0 3% 3%;
+display: flex;
+justify-content: flex-start;
+margin: 3% 0 3% 3%;
 }
+
 /* -------------------------------------------------
 -------------Activities section-----------------*/
 
 #activities
 {
-display: flex;
-flex-direction: column;
-margin: 30px 0 0 0;
-padding: 0;
-margin-bottom: 4%;
-}
 
-#actiTitle
-{
-display: flex;
+margin: 30px 0 4% 0;
+padding: 0;
 }
 
 #actiTitle h1
@@ -530,24 +274,18 @@ text-align: center;
 /*thumbnail container*/
 .thumbnailActiCont
 {
-display: flex;
 flex-direction: row;
-width: 100%;
 height: auto;
 margin: 0;
 padding: 0;
 border-radius: 0;
 align-items: center;
 justify-content: center;
-flex-wrap: wrap;
-
 }
 
 /*activities thumbnail*/
 .thumbnailActi
 {
-display: flex;
-flex-direction: column;
 height: 275px;
 width: 29%;
 min-width: 400px;
@@ -555,33 +293,9 @@ margin: 1%;
 padding: 0.5%;
 background-color: white;
 justify-content: space-between;
-
 border: solid white 2px;
-border-radius: 15px;
-box-shadow: 1px 1px 10px -7px #000000;
-
-}
-.thumbnailActi h2
-{
-display: flex;
-height: 10%;
-max-height: 7%;
-min-height: 45px;
-padding: 30px 0 0 15px;
-margin: 0 0 0 2%;;
-text-align: center;
 }
 
-.thumbnailActiImg
-{
-display: flex;
-border-radius: 15px 15px 0 0;
-width: 100%;
-height: 90%;
-overflow: hidden;
-justify-content: center;
-align-items: center;
-}
 
 /* thumbnail n°2,3,5 and 6 height modification */
 /* to be the same size*/
@@ -607,36 +321,13 @@ height: 275px;
 
 footer
 {
-padding-top: 4%;
-display: flex;
 flex-direction: column;
-padding-left: 0;
-background-color: #F2F2F2;
-margin-top: 0.5%;
+padding: 4% 0 0 0;
 justify-content: space-around;
-
 }
 
 nav
 {
 margin-right: 0;
 margin-left: 5%;
-justify-content: space-around;
-
-}
-
-nav ul
-{
-list-style-type: none;
-margin-left:0;
-padding-left:0;
-line-height: 225%;
-
-}
-
-nav ul li a
-{
-text-decoration: none;
-color: black;
-
 }
