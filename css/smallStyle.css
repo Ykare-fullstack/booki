@@ -10,10 +10,15 @@ box-sizing: content-box; /* Opera/IE 8+ */
 }
 /* sections in body are organized in columns */
 
+body
+{
+	padding: 0;
+	margin:0;
+}
 
 h1
 {
-font-size: x-large;
+	font-size: x-large;
 }
 
 /* -------------------------------------------------
@@ -22,62 +27,68 @@ the top banner is split into right and left header in html
 inPageNav is referring to the navigation tabs up top right */
 #banner
 {
-height: 300px;
-padding: 0 0 0 0;
-margin: 2% 0 1% 0;
+	height: 100%;
+	max-height: 300px;
+	padding: 0 0 0 0;
+	margin: 2% 0 1% 0;
+
 }
 
 #topHeader
 {
-flex-direction: column;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 3%;
 }
 
 #logo
 {
-justify-content: center;
-height: 75px;
-padding-left: 0;
+	justify-content: center;
+	height: 75px;
+	padding-left: 0;
+	margin: 0 0 3% 0;
 }
 
 #logo img
 {	
-justify-content: center;
+	justify-content: center;
 }
 
 #inPageNavCont
 {
-justify-content: center;
-width: 100%;
+	justify-content: center;
+	width: 100%;
 }
 
 .inPageNav
 { 
-height: auto;
-width: 100%;
-justify-content: center;
-padding: 2% 0 0 0;
-border-bottom: solid 3px #F2F2F2;
+	height: 50px;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	padding: 0 0 0 0;
+	border-bottom: solid 3px #F2F2F2;
 }
 
 /* changing the aspect while selected*/
 .inPageNav:focus
 {
-border-bottom: solid 3px #0065FC;
-border-top: none;
+	border-bottom: solid 3px #0065FC;
+	border-top: none;
 }
 
 /*---------------------*/
 #bottomHeader
 {
-justify-content: space-around;
-padding: 0;
-margin: 3% 0 0 0;
+	justify-content: space-around;
+	padding: 0;
+	margin: 3% 0 0 0;
 }
 
 #bottomHeader h1
 {
-width: 90%;
-margin: 0 0 0 3%;
+	width: 90%;
+	margin: 0 0 0 3%;
 }
 
 .note
@@ -87,8 +98,8 @@ margin: 0 0 0 3%;
 
 .infoNote
 {
-width: 90%;
-margin: 0 0 0 3%;
+	width: 90%;
+	margin: 0 0 0 3%;
 }
 
 /* -------------------------------------------------
@@ -96,75 +107,71 @@ margin: 0 0 0 3%;
 /* the filters are non-fonctionnals yet! only aesthetic implemented yet */
 
 /*---------------------*/
-/*first part location icon + user input + research button */
 #research
 {
-justify-content: center;
-align-items: center;
-margin: 3% 0 0 0;
-padding: 0;
+	justify-content: center;
+	align-items: center;
+	margin: 3% 0 0 0;
+	padding: 0;
 }
 
 #userForm
 {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
+/*first part location icon + user input + research button */
 #searchBar
 { 
-width: 90%;
-min-width: auto;
-margin: 2% 0 2% 0;
+	width: 90%;
+	min-width: auto;
+	margin: 2% 0 2% 0;
 }
-
-/* location icon configuration*/
-
-
 
 #searchButtonText
 {
-display: none;
+	display: none;
 }
 
 #searchButtonIcon
 {
-display: flex;
-height: 100%;
-width: 15%;
-border-radius: 0 10px 10px 0;
-background-color: #0065FC;
-color: white;
-align-items: center;
-justify-content: center;
-padding: 0;
-margin: 0;
+	display: flex;
+	height: 100%;
+	width: 15%;
+	border-radius: 0 10px 10px 0;
+	background-color: #0065FC;
+	color: white;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
 }
 
 /*---------------------*/
 /* second part: filters  */
 #filters
 {
-width: 100%;
-align-items: flex-start;
-margin-right: 0;
+	width: 100%;
+	align-items: flex-start;
+	margin-right: 0;
 }
 
 #filters p
 {
-margin-top: 30px;
-padding-left: 4%;
-width: 100%;
-text-align: left;
+	margin-top: 30px;
+	padding-left: 4%;
+	width: 100%;
+	text-align: left;
 }
 
 /*choice box including icon + text*/
 .filterChoice
 {
-margin-top: 2%;
-margin-left: 3%;
+	margin-top: 2%;
+	margin-left: 3%;
 }
 
 /* -------------------------------------------------
@@ -174,85 +181,89 @@ margin-left: 3%;
 /*-- part 1 regular accomodation---*/
 #accomodation
 {
-width: 100%;
-height: auto;
-flex-direction: column-reverse;
-margin: 3% 0 0 0;
+	width: 100%;
+	height: auto;
+	flex-direction: column-reverse;
+	margin: 3% 0 0 0;
 }
 
 /* accomodation thumbnail container*/
 #accoThumbCont
 {
-width: 100%;
-margin: 0;
-padding: 0;
-border-radius: 0;
-background-color: white;
-align-items: center;
-justify-content: center;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border-radius: 0;
+	background-color: white;
+	align-items: center;
+	justify-content: center;
 }
 
 #accoThumbCont h1
 {
-text-align: center;
+	width: 390px;
+	margin-left: 5%;
 }
 
-#accoThumbCont a
+.showMoreLink
 {
-text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.showMoreLink a
+{
+	width: 350px;
+	text-align: left;
 }
 
 /* accomodation thumbnail */
 .thumbnailAcco
 {
-height: 275px;
-min-width: 400px;
+	height: 220px;
+	width: 90%;
+	max-width: 350px;
 }
 
 /*-- part 2 popular accomodation---*/
 aside
 {
-width: 100%;
-height: auto;
-border-radius: 0%;
-margin: 0 0 20px 0;
-padding: 0 0 5% 0;
+	width: 100%;
+	height: auto;
+	border-radius: 0%;
+	margin: 0 0 20px 0;
+	padding: 0 0 5% 0;
 }
 
 #popularHead
 {
-margin: 2% 0 2% 0;
-justify-content: space-around;
+	width: 100%;
+	margin: 2% 0 2% 0;
+	padding: 0;
+	justify-content: space-between;
 }
 
 
 /* thumbnail popular accomodations */
 .thumbnailPopularCont
 {
-display: flex;
-width: 100%;
-margin: 0;
-padding: 0;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
+	display: flex;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 .thumbnailPopular
 {
-height: 220px;
-max-height: 220px;
-width: 29%;
-min-width: 400px;
-margin: 2% 2.5% 1% 2.5%;
-}
-
-#accomodation a
-{
-display: flex;
-justify-content: flex-start;
-margin: 3% 0 3% 3%;
+	height: 160px;
+	max-height: 220px;
+	width: 90%;
+	max-width: 350px;
+	margin: 2% 0 1% 0;
 }
 
 /* -------------------------------------------------
@@ -260,60 +271,47 @@ margin: 3% 0 3% 3%;
 
 #activities
 {
-
-margin: 30px 0 4% 0;
-padding: 0;
+	margin: 3% 0 4% 0;
+	padding: 0;
+	align-items: center;
 }
 
-#actiTitle h1
+#actiTitle
 {
-width: 100%;
-text-align: center;
+	width: 90%;
+	max-width: 350px;
 }
 
 /*thumbnail container*/
 .thumbnailActiCont
 {
-flex-direction: row;
-height: auto;
-margin: 0;
-padding: 0;
-border-radius: 0;
-align-items: center;
-justify-content: center;
+	flex-direction: row;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	border-radius: 0;
+	align-items: center;
+	justify-content: center;
 }
 
 /*activities thumbnail*/
 .thumbnailActi
 {
-height: 275px;
-width: 29%;
-min-width: 400px;
-margin: 1%;      
-padding: 0.5%;
-background-color: white;
-justify-content: space-between;
-border: solid white 2px;
+	max-height: 220px;
+	width: 90%;
+	max-width: 350px;
+	margin: 1%;      
+	padding: 0.5%;
+	background-color: white;
+	justify-content: space-between;
+	border: solid white 2px;
 }
-
 
 /* thumbnail n°2,3,5 and 6 height modification */
 /* to be the same size*/
-.thumbnailActiCont :nth-child(2)
+.thumbnailActiCont .thumbnailActi
 {
-height: 275px;
-}
-.thumbnailActiCont :nth-child(3)
-{
-height: 275px;
-}
-.thumbnailActiCont :nth-child(5)
-{
-height: 275px;
-}
-.thumbnailActiCont :nth-child(6)
-{
-height: 275px;
+	height: 275px;
 }
 
 /* -------------------------------------------------
@@ -321,13 +319,13 @@ height: 275px;
 
 footer
 {
-flex-direction: column;
-padding: 4% 0 0 0;
-justify-content: space-around;
+	flex-direction: column;
+	padding: 4% 0 0 0;
+	justify-content: space-around;
 }
 
 nav
 {
-margin-right: 0;
-margin-left: 5%;
+	margin-right: 0;
+	margin-left: 5%;
 }

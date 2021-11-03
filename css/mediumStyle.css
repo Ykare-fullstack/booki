@@ -1,25 +1,9 @@
 ﻿
-
-/* adding "raleway" as the new font in ttf format*/
-
-
-
-/* box-sizing for every browser and applying the font to everything */
-* 
-{
-font-family: 'Raleway', sans-serif;	/* applying the font */
-
-box-sizing: content-box; /* Opera/IE 8+ */
--moz-box-sizing: content-box; /* Firefox, others  */
--webkit-box-sizing: content-box; /* Safari/Chrome, others */  
-}
-
 /* sections in body are organized in columns */
 body
 {
-min-width: auto;
-margin: 0;
-padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 
@@ -29,52 +13,47 @@ padding: 0;
 /* the filters are non-fonctionnals yet! only aesthetic implemented yet */
 
 /*---------------------*/
-/*first part location icon + user input + research button */
+
 #research
 {
-max-width: 100%;
-margin: 30px 0 0 0;
-padding: 0;
-
+	max-width: 100%;
+	margin: 2% 0 0 0;
+	padding: 0;
 }
 
+/*first part location icon + user input + research button */
 #searchBar
 {
-margin-left: 4%;
+	margin-left: 4%;
 }
 
 /*---------------------*/
 /* second part: filters  */
 #filters
 {
-height: 200px;
-
+	height: 200px;
 }
-
 
 #filters p
 {
-margin-top: 30px;
-padding-left: 4%;
-width: 100%;
-text-align: left;
-
-	
+	margin-top: 30px;
+	padding-left: 4%;
+	width: 100%;
+	text-align: left;	
 }
 
 /*choice box including icon + text*/
 .filterChoice
 {
-width: auto;
-height: 50px;
+	width: auto;
+	height: 50px;
 }
-
 
 /* info line with icon down the section */
 .infoNote
 {
-justify-content: flex-start;
-margin: 2% 0 1% 4%;
+	justify-content: flex-start;
+	margin: 2% 0 1% 4%;
 }
 
 /* -------------------------------------------------
@@ -84,37 +63,38 @@ margin: 2% 0 1% 4%;
 /*-- part 1 regular accomodation---*/
 #accomodation
 {
-width: 100%;
-height: auto;
-flex-direction: column-reverse;
-margin: 3% 0 0 0;
+	width: 100%;
+	height: auto;
+	flex-direction: column-reverse;
+	margin: 3% 0 0 0;
 }
 
 /* accomodation thumbnail container*/
 #accoThumbCont
 {
-width: 100%;
-margin: 0;
-padding: 0;
-border-radius: 0;
-align-items: center;
-justify-content: center;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border-radius: 0;
+	align-items: center;
+	justify-content: center;
 }
 
 #accoThumbCont h1
 {
-text-align: center;
+	text-align: center;
+	margin: 7% 0 2% 0;
 }
 
-#accoThumbCont a
+.showMoreLink
 {
-text-align: center;
+	margin: 1% 0 1% 15%;
 }
 
 /* accomodation thumbnail */
 .thumbnailAcco
 {
-min-width: 400px;      
+	min-width: 330px;      
 }
 
 
@@ -122,104 +102,97 @@ min-width: 400px;
 /*-- part 2 popular accomodation---*/
 aside
 {
-width: 100%;
-height: auto;
-border-radius: 0px;
-background-color: #F2F2F2;
-margin: 0 0 20px 0;
-padding: 0 0 5% 0;
+	width: 100%;
+	height: auto;
+	border-radius: 0px;
+	background-color: #F2F2F2;
+	margin: 0 0 20px 0;
+	padding: 0 0 5% 0;
 }
 
 #popularHead
 {
-margin: 2% 0 4% 0;
-justify-content: space-around;
+	margin: 2% 0 0 0;
+	justify-content: space-around;
 }
 
 .thumbnailPopularCont
 {
-display: flex;
-margin: 0;
-padding: 0;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 /* thumbnail popular accomodations */
 .thumbnailPopular
 {
-height: 220px;
-max-height: 220px;
-width: 29%;
-min-width: 400px;
-margin: 2% 5% 1% 0;
+	height: 220px;
+	max-height: 220px;
+	width: 29%;
+	min-width: 300px;
+	margin: 2% 1.5% 1% 0;
 }
 
-#accomodation a
-{
-display: flex;
-justify-content: flex-start;
-margin: 3% 0 3% 3%;
-}
 /* -------------------------------------------------
 -------------Activities section-----------------*/
 
 #activities
 {
-margin: 30px 0 4% 0;
-padding: 0;
+	margin: 30px 0 4% 0;
+	padding: 0;
 }
 
 #actiTitle h1
 {
-width: 100%;
-text-align: center;
+	width: 100%;
+	text-align: center;
 }
 
 /*thumbnail container*/
 .thumbnailActiCont
 {
-
-flex-direction: row;
-height: auto;
-margin: 0;
-padding: 0;
-align-items: center;
-justify-content: center;
+	flex-direction: row;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	align-items: center;
+	justify-content: center;
 }
 
 /*activities thumbnail*/
 .thumbnailActi
 {
-height: 275px;
-width: 29%;
-min-width: 400px;
-margin: 1%;      
-padding: 0.5%;
-background-color: white;
-justify-content: space-between;
-border: solid white 2px;
+	height: 275px;
+	width: 29%;
+	min-width: 400px;
+	margin: 1%;      
+	padding: 0.5%;
+	background-color: white;
+	justify-content: space-between;
+	border: solid white 2px;
 }
 
 /* activities thumbnail n°2,3,5 and 6 height modification */
 /* to be the same size*/
 .thumbnailActiCont :nth-child(2)
 {
-height: 275px;
+	height: 275px;
 }
 .thumbnailActiCont :nth-child(3)
 {
-height: 275px;
+	height: 275px;
 }
 .thumbnailActiCont :nth-child(5)
 {
-height: 275px;
+	height: 275px;
 }
 .thumbnailActiCont :nth-child(6)
 {
-height: 275px;
+	height: 275px;
 }
 
 /* -------------------------------------------------
@@ -227,12 +200,12 @@ height: 275px;
 
 footer
 {
-padding-top: 4%;
-padding-left: 0;
-justify-content: space-around;
+	padding-top: 4%;
+	padding-left: 0;
+	justify-content: space-around;
 }
 
 nav
 {
-margin-right: 0;
+	margin-right: 0;
 }
