@@ -2,6 +2,8 @@
 
 ## Transformez une maquette en site web avec HTML & CSS ##
 
+![BookiLogo](./assets/BookiLogo.png)
+
 ### 1 . Intégrer du contenu web conformément à une maquette ###
 
 - [X] validé
@@ -55,6 +57,11 @@ Le code HTML et CSS est validé si :
 - [X] Le code CSS ne soulève aucune erreur sur le validateur W3C (il peut soulever des warnings).
 
 
+
+
+
+English Version :
+-----------------------------------------------
 
 
 # Project 2 - OpenClassroom qualifying WebDev training program #
