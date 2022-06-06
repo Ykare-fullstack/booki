@@ -15,6 +15,7 @@ body
 	display: flex;
 	flex-direction: column;
 	margin-top: 0;
+	
 }
 
 /* normalizing titles*/
@@ -46,6 +47,7 @@ inPageNav is referring to the navigation tabs up top right */
 	flex-direction: column;
 	padding: 0 2% 0 2%;
 	margin-bottom: 1%;
+		
 }
 
 #topHeader
@@ -55,6 +57,7 @@ inPageNav is referring to the navigation tabs up top right */
 	align-items: center;
 	width: 100%;
 	height: 50%;
+		
 }
 
 #logo
@@ -80,6 +83,7 @@ inPageNav is referring to the navigation tabs up top right */
 	padding: 0;
 	height: 100%;
 	width: 30%;
+		
 }
 
 .inPageNav
@@ -108,6 +112,7 @@ border-top: solid 3px white;
 	height: 50%;
 	width: 100%;
 	padding-top: 1%;
+		
 }
 
 #bottomHeader h1
@@ -133,9 +138,8 @@ border-top: solid 3px white;
 {
 	display: flex;
 	flex-direction: column;
-	margin-left: 2%;
-	margin-right: 2%;
 	width: 100%;
+		
 }
 
 /*first part location icon + user input + research button */
@@ -151,6 +155,8 @@ border-top: solid 3px white;
 	align-items: center;
 	justify-content: space-between;
 	margin-bottom: 2%;
+	margin-left: 2%;
+		
 }
 
 /* location icon configuration*/
@@ -209,7 +215,8 @@ border-top: solid 3px white;
 	font-size: 120%;
 	font-weight: bold;
 	margin-bottom: 2%;
-	margin-right: 2%;
+	margin-left: 2%;
+		
 }
 
 /* choice box including icon + text */
@@ -260,6 +267,8 @@ border-top: solid 3px white;
 	display: flex;
 	align-items: center;
 	margin-bottom: 2%;
+	margin-left: 2%;
+		
 }
 
 .infoNote i
@@ -286,9 +295,8 @@ border-top: solid 3px white;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-bottom: 50px;
-	margin-left: 0.5%;
-	margin-right: 0.5%;
-
+	margin-left: 2%;
+		
 }
 
 /* accomodation thumbnail container*/
@@ -300,6 +308,7 @@ border-top: solid 3px white;
 	background-color: #F2F2F2;
 	padding: 2%;
 	flex-wrap: wrap;
+		
 }
 
 #accoThumbCont h1
@@ -333,6 +342,8 @@ border-top: solid 3px white;
 	border: solid white 2px;
 	border-radius: 15px;
 	box-shadow: 1px 1px 10px -7px #000000;
+	color: black;
+	text-decoration: none;
 }
 
 .thumbnailAccoImg
@@ -375,12 +386,12 @@ aside
 	display: flex;
 	flex-direction: column;
 	width: 35%;
+	margin-right: 2%;
 	border-radius: 15px;
 	background-color: #F2F2F2;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: wrap;
-
+	flex-wrap: wrap;	
 }
 
 #popularHead
@@ -421,6 +432,8 @@ aside
 	max-width: 100%;
 	margin: 4.5% 3% 5% 3%;
 	padding: 0.5%;
+	color: black;
+	text-decoration: none;
 	background-color: white;
 	overflow: hidden;
 	border: solid white 2px;
@@ -462,12 +475,14 @@ aside
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	margin-left: 2%;
+		
 }
 
 #actiTitle
 {
 	display: flex;
+	margin-left: 2%;
+		
 }
 
 /* thumbnail container*/
@@ -476,8 +491,9 @@ aside
 	display: flex;
 	flex-direction: column;
 	height: 680px;
-	width: 100%;
 	flex-wrap: wrap;
+	margin-left: 2%;
+		
 }
 
 /*activities thumbnail*/
@@ -488,6 +504,8 @@ aside
 	height: 595px;
 	flex-direction: column;
 	border-radius: 15px;
+	color: black;
+	text-decoration: none;
 	border: none;
 	margin-bottom: 2%;
 	box-shadow: 1px 1px 10px -7px #000000;

@@ -1,15 +1,4 @@
 ﻿
-/* box-sizing for every browser and applying the font to everything */
-* 
-{
-font-family: 'Raleway', sans-serif;	/* applying the font */
-
-box-sizing: content-box; /* Opera/IE 8+ */
--moz-box-sizing: content-box; /* Firefox, others  */
--webkit-box-sizing: content-box; /* Safari/Chrome, others */  
-}
-/* sections in body are organized in columns */
-
 body
 {
 	padding: 0;
@@ -104,7 +93,7 @@ inPageNav is referring to the navigation tabs up top right */
 
 /* -------------------------------------------------
 -----------------Form section---------------------*/
-/* the filters are non-fonctionnals yet! only aesthetic implemented yet */
+/* the filters are non-fonctionnals! only aesthetic implemented yet */
 
 /*---------------------*/
 #research
@@ -263,7 +252,7 @@ aside
 	max-height: 220px;
 	width: 90%;
 	max-width: 350px;
-	margin: 2% 0 1% 0;
+	margin: 2% 1% 1% 0;
 }
 
 /* -------------------------------------------------
