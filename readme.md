@@ -71,19 +71,19 @@ Delivrable : HTML Code and CSS
 
 Both codes are valideted if :
 
-- [] The Web page is made according to the model : Every elements of the model is integrated in the project.
+- [ ] The Web page is made according to the model : Every elements of the model is integrated in the project.
 
-- [] Images are in a separated file.
+- [ ] Images are in a separated file.
 
-- [] Fonts are called and used via Google Font.
+- [ ] Fonts are called and used via Google Font.
 
-- [] HTML code doesn't trigger any warning with W3C validator (warnings may appear).
+- [ ] HTML code doesn't trigger any warning with W3C validator (warnings may appear).
 
-- [] No HTML code is duplicated, For example to simplify responsive adaptation.
+- [ ] No HTML code is duplicated, For example to simplify responsive adaptation.
 
-- [] HTML code use semantic tags that refers to thir content.
+- [ ] HTML code use semantic tags that refers to thir content.
 
-- [] Project contains at least the tags : `header`, `nav`, `section` et `footer`.
+- [ ] Project contains at least the tags : `header`, `nav`, `section` et `footer`.
 
 
 
@@ -97,18 +97,18 @@ Delivrable : HTML and CSS code
 
 Both codes are valideted if :
 
-- [] Project uses Desktop-first ; the Website is made for computer first then tablets then smartphones.
+- [ ] Project uses Desktop-first ; the Website is made for computer first then tablets then smartphones.
 
-- [] CSS style uses pixels instead of em or rem.
+- [ ] CSS style uses pixels instead of em or rem.
 
-- [] Project uses Flexbox (not Grid).
+- [ ] Project uses Flexbox (not Grid).
 
-- [] Model style is respected thanks to CSS.
+- [ ] Model style is respected thanks to CSS.
 
-- [] Website correctly displaying on computer or smartphone.
+- [ ] Website correctly displaying on computer or smartphone.
 
-- [] Images ratio is respected.
+- [ ] Images ratio is respected.
 
-- [] CSS code contains several CSS files gathered in a css folder.
+- [ ] CSS code contains several CSS files gathered in a css folder.
 
-- [] CSS code doesn't trigger any warning with W3C validator (warnings may appear).
+- [ ] CSS code doesn't trigger any warning with W3C validator (warnings may appear).
