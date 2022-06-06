@@ -68,6 +68,8 @@ English Version :
 
 ## Transform a maodel in a proper website with HTML & CSS ##
 
+![BookiLogo](./assets/BookiLogo.png)
+
 ### 1 . Integrating web content according to a model ###
 
 - [X] validated
