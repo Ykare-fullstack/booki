@@ -2,35 +2,9 @@
 
 ## Transformez une maquette en site web avec HTML & CSS ##
 
-1 . Intégrer du contenu web conformément à une maquette
+### 1 . Intégrer du contenu web conformément à une maquette ###
 
-validé
-
-commentaire:
-
-Livrable : le code HTML et CSS
-
-Le code HTML et CSS est validé si :
-
--[] La page web est fidèle à la maquette : tous les éléments de la maquette ont été intégrés dans le code du projet.
-
--[] Les images sont dans un dossier séparé.
-
--[] Les polices sont appelées et utilisées via Google Font.
-
--[] Le code HTML ne soulève aucune erreur sur le validateur W3C (il peut soulever des warnings).
-
--[] Aucun code HTML n’est dupliqué, par exemple pour simplifier l'adaptation responsive.
-
--[] Le code HTML utilise des balises sémantiques en accord avec le type de contenu qu’elles représentent.
-
--[] Le projet doit, au moins, comporter les balises `header`, `nav`, `section` et `footer`.
-
-
-
-2 . Implémenter un site responsive
-
-validé
+- [X] validé
 
 commentaire:
 
@@ -38,21 +12,47 @@ Livrable : le code HTML et CSS
 
 Le code HTML et CSS est validé si :
 
--[] Le projet utilise du desktop first ; le site est d’abord développé pour les ordinateurs, puis s’adapte aux tablettes et aux téléphones mobiles.
+- [X] La page web est fidèle à la maquette : tous les éléments de la maquette ont été intégrés dans le code du projet.
 
--[] Le style CSS du projet utilise des pixels et des pourcentages au lieu des em et rem.
+- [X] Les images sont dans un dossier séparé.
 
--[] Le projet utilise Flexbox (et non Grid).
+- [X] Les polices sont appelées et utilisées via Google Font.
 
--[] Le style de la maquette est respecté grâce au CSS.
+- [X] Le code HTML ne soulève aucune erreur sur le validateur W3C (il peut soulever des warnings).
 
--[] Le site s’affiche aussi bien sur mobile que sur tablette et ordinateur.
+- [X] Aucun code HTML n’est dupliqué, par exemple pour simplifier l'adaptation responsive.
 
--[] Les proportions des images sont toujours respectées.
+- [X] Le code HTML utilise des balises sémantiques en accord avec le type de contenu qu’elles représentent.
 
--[] Le code CSS est dans un ou plusieurs fichiers contenus dans un dossier CSS.
+- [X] Le projet doit, au moins, comporter les balises `header`, `nav`, `section` et `footer`.
 
--[] Le code CSS ne soulève aucune erreur sur le validateur W3C (il peut soulever des warnings).
+
+
+### 2 . Implémenter un site responsive ###
+
+- [X] validé
+
+commentaire:
+
+Livrable : le code HTML et CSS
+
+Le code HTML et CSS est validé si :
+
+- [X] Le projet utilise du desktop first ; le site est d’abord développé pour les ordinateurs, puis s’adapte aux tablettes et aux téléphones mobiles.
+
+- [X] Le style CSS du projet utilise des pixels et des pourcentages au lieu des em et rem.
+
+- [X] Le projet utilise Flexbox (et non Grid).
+
+- [X] Le style de la maquette est respecté grâce au CSS.
+
+- [X] Le site s’affiche aussi bien sur mobile que sur tablette et ordinateur.
+
+- [X] Les proportions des images sont toujours respectées.
+
+- [X] Le code CSS est dans un ou plusieurs fichiers contenus dans un dossier CSS.
+
+- [X] Le code CSS ne soulève aucune erreur sur le validateur W3C (il peut soulever des warnings).
 
 
 
@@ -61,9 +61,9 @@ Le code HTML et CSS est validé si :
 
 ## Transform a maodel in a proper website with HTML & CSS ##
 
-1 . Integrating web content according to a model
+### 1 . Integrating web content according to a model ###
 
-validated
+- [X] validated
 
 commentaries:
 
@@ -71,25 +71,25 @@ Delivrable : HTML Code and CSS
 
 Both codes are valideted if :
 
-- [ ] The Web page is made according to the model : Every elements of the model is integrated in the project.
+- [X] The Web page is made according to the model : Every elements of the model is integrated in the project.
 
-- [ ] Images are in a separated file.
+- [X] Images are in a separated file.
 
-- [ ] Fonts are called and used via Google Font.
+- [X] Fonts are called and used via Google Font.
 
-- [ ] HTML code doesn't trigger any warning with W3C validator (warnings may appear).
+- [X] HTML code doesn't trigger any warning with W3C validator (warnings may appear).
 
-- [ ] No HTML code is duplicated, For example to simplify responsive adaptation.
+- [X] No HTML code is duplicated, For example to simplify responsive adaptation.
 
-- [ ] HTML code use semantic tags that refers to thir content.
+- [X] HTML code use semantic tags that refers to thir content.
 
-- [ ] Project contains at least the tags : `header`, `nav`, `section` et `footer`.
+- [X] Project contains at least the tags : `header`, `nav`, `section` et `footer`.
 
 
 
-2 . Implement a responsive website
+### 2 . Implement a responsive website ###
 
-validated
+- [X] validated
 
 commentaries:
 
@@ -97,18 +97,18 @@ Delivrable : HTML and CSS code
 
 Both codes are valideted if :
 
-- [ ] Project uses Desktop-first ; the Website is made for computer first then tablets then smartphones.
+- [X] Project uses Desktop-first ; the Website is made for computer first then tablets then smartphones.
 
-- [ ] CSS style uses pixels instead of em or rem.
+- [X] CSS style uses pixels instead of em or rem.
 
-- [ ] Project uses Flexbox (not Grid).
+- [X] Project uses Flexbox (not Grid).
 
-- [ ] Model style is respected thanks to CSS.
+- [X] Model style is respected thanks to CSS.
 
-- [ ] Website correctly displaying on computer or smartphone.
+- [X] Website correctly displaying on computer or smartphone.
 
-- [ ] Images ratio is respected.
+- [X] Images ratio is respected.
 
-- [ ] CSS code contains several CSS files gathered in a css folder.
+- [X] CSS code contains several CSS files gathered in a css folder.
 
-- [ ] CSS code doesn't trigger any warning with W3C validator (warnings may appear).
+- [X] CSS code doesn't trigger any warning with W3C validator (warnings may appear).
